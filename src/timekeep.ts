@@ -22,7 +22,7 @@ export class Bime {
       becond: Number((t & 0xf0n) >> 4n),
       binute: Number((t & 0xf00n) >> 8n),
       bour: Number((t & 0xf000n) >> 12n),
-      daySinceEpoch: Number((t & 0xf0000n) >> 16n),
+      daySinceEpoch: Number(t >> 16n),
     };
   }
 }
