@@ -1,0 +1,102 @@
+@import "@fontsource-variable/geist-mono";
+
+body {
+  background-color: oklch(14.7% 0.004 49.25);
+  color: oklch(98.5% 0.001 106.423);
+  font-family: "Geist Mono Variable", "Courier New", Courier, monospace;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+#app {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.pad {
+  padding: 32px;
+}
+
+.time {
+  display: flex;
+  gap: 24px;
+}
+
+@media (max-width: 600px) {
+  .time {
+    flex-direction: column;
+  }
+}
+
+.time .digit {
+  flex-grow: 1;
+  flex-shrink: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.digit .binboxes {
+  display: flex;
+  gap: 4px;
+}
+.digit .binboxes .box {
+  border: 2px solid oklch(55.3% 0.013 58.071);
+  border-radius: 2px;
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  transition: 150ms ease background-color;
+}
+.digit .binboxes .box[data-on="true"] {
+  background-color: oklch(37.4% 0.01 67.558);
+}
+
+.digit .hex {
+  font-size: 48px;
+  font-weight: 200;
+  position: relative;
+  margin-top: 6px;
+}
+.digit .hex::after {
+  content: " HEX";
+  font-size: 12px;
+  left: 0px;
+  color: oklch(37.4% 0.01 67.558);
+  font-weight: 500;
+}
+
+.digit .dec {
+  font-weight: 500;
+  font-size: 18px;
+  position: relative;
+}
+.digit .dec::after {
+  content: " DEC";
+  font-size: 12px;
+  left: 0px;
+  color: oklch(37.4% 0.01 67.558);
+  font-weight: 500;
+}
+
+.digit .label {
+  color: oklch(55.3% 0.013 58.071);
+  margin-top: 6px;
+}
+
+.essaying {
+  max-width: 450px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 48px;
+  color: oklch(44.4% 0.011 73.639);
+  font-size: 14px;
+}
+.essaying a {
+  color: oklch(70.9% 0.01 56.259);
+  font-weight: 600;
+}

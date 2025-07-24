@@ -1,0 +1,5 @@
+1 sibisecond = 1318359375 nanoseconds
+1 becond = 16 sibiseconds
+1 binute = 16 beconds
+1 bour = 16 binutes
+1 day (24 hrs) = 16 bours

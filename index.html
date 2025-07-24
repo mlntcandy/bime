@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bime</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="pad">
+        <section class="time">
+          <!-- bour -->
+          <div class="digit" data-digit="br">
+            <div class="binboxes">
+              <div class="box" data-on="false"></div>
+              <div class="box" data-on="false"></div>
+              <div class="box" data-on="false"></div>
+              <div class="box" data-on="false"></div>
+            </div>
+            <div class="hex">0</div>
+            <div class="dec">0</div>
+            <div class="label">bours</div>
+          </div>
+          <!-- binute -->
+          <div class="digit" data-digit="bin">
+            <div class="binboxes">
+              <div class="box" data-on="false"></div>
+              <div class="box" data-on="false"></div>
+              <div class="box" data-on="false"></div>
+              <div class="box" data-on="false"></div>
+            </div>
+            <div class="hex">0</div>
+            <div class="dec">0</div>
+            <div class="label">binutes</div>
+          </div>
+          <!-- becond -->
+          <div class="digit" data-digit="bec">
+            <div class="binboxes">
+              <div class="box" data-on="false"></div>
+              <div class="box" data-on="false"></div>
+              <div class="box" data-on="false"></div>
+              <div class="box" data-on="false"></div>
+            </div>
+            <div class="hex">0</div>
+            <div class="dec">0</div>
+            <div class="label">beconds</div>
+          </div>
+          <!-- sibibecond -->
+          <div class="digit" data-digit="sibibec">
+            <div class="binboxes">
+              <div class="box" data-on="false"></div>
+              <div class="box" data-on="false"></div>
+              <div class="box" data-on="false"></div>
+              <div class="box" data-on="false"></div>
+            </div>
+            <div class="hex">0</div>
+            <div class="dec">0</div>
+            <div class="label">sibibeconds</div>
+          </div>
+        </section>
+        <section class="essaying">
+          <p>
+            JS has extreme skill issues with sleeping for exactly 1 sibibecond,
+            so this clock will slowly become imprecise over time (for no more
+            than 1 sibibecond though)
+          </p>
+          <p>
+            <a href="https://github.com/mlntcandy/bime">Source code (GitHub)</a>
+          </p>
+        </section>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
