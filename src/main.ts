@@ -7,7 +7,7 @@ function display(comp: BimeComponents) {
     bour: t.querySelector('.digit[data-digit="br"]')!,
     binute: t.querySelector('.digit[data-digit="bin"]')!,
     becond: t.querySelector('.digit[data-digit="bec"]')!,
-    sibibecond: t.querySelector('.digit[data-digit="sibibec"]')!,
+    sibisecond: t.querySelector('.digit[data-digit="sibisec"]')!,
   };
   Object.entries(componentEls).forEach(([k, el]) => {
     let c = comp[k as keyof BimeComponents];
@@ -22,4 +22,4 @@ function display(comp: BimeComponents) {
 const setLatestTime = () =>
   display(Bime.fromDate(new Date()).timeAsComponents());
 setLatestTime();
-setInterval(setLatestTime, Bime.MS_PER_SIBIBEC_APPROX);
+setInterval(setLatestTime, Bime.MS_PER_SIBISEC_APPROX);
