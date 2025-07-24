@@ -19,7 +19,7 @@ function display(comp: BimeComponents) {
     el.querySelector(".dec")!.innerHTML = c.toString(10);
   });
 }
-
-setInterval(() => {
+const setLatestTime = () =>
   display(Bime.fromDate(new Date()).timeAsComponents());
-}, Bime.MS_PER_SIBIBEC_APPROX);
+setLatestTime();
+setInterval(setLatestTime, Bime.MS_PER_SIBIBEC_APPROX);
