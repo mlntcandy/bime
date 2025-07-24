@@ -1,3 +1,4 @@
+epoch = 1753371681447 unix ms
 1 sibisecond = 1318359375 nanoseconds
 1 becond = 16 sibiseconds
 1 binute = 16 beconds
