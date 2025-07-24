@@ -15,7 +15,7 @@ function display(comp: BimeComponents) {
       const set = !!(c & (1 << (3 - i)));
       el.setAttribute("data-on", `${set}`);
     });
-    el.querySelector(".hex")!.innerHTML = c.toString(16);
+    el.querySelector(".hex")!.innerHTML = c.toString(16).toUpperCase();
     el.querySelector(".dec")!.innerHTML = c.toString(10);
   });
 }
