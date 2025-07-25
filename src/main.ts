@@ -1,7 +1,7 @@
 import "./style.css";
 import { Bime, type BimeComponents } from "./timekeep";
 
-function display(comp: BimeComponents) {
+function displayTime(comp: BimeComponents) {
   const t = document.querySelector(".time")!;
   const componentEls = {
     bour: t.querySelector('.digit[data-digit="br"]')!,
@@ -20,6 +20,6 @@ function display(comp: BimeComponents) {
   });
 }
 const setLatestTime = () =>
-  display(Bime.fromDate(new Date()).timeAsComponents());
+  displayTime(Bime.fromDate(new Date()).timeAsComponents());
 setLatestTime();
 setInterval(setLatestTime, Bime.MS_PER_SIBISEC_APPROX);
