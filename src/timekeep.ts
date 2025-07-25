@@ -34,6 +34,13 @@ export class Bime {
     };
   }
 }
+// exposing Bime class to devtools console
+declare global {
+  interface Window {
+    Bime: typeof Bime;
+  }
+}
+window.Bime = Bime;
 
 export type BimeComponents = {
   sibisecond: number;
