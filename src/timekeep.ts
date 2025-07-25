@@ -15,6 +15,9 @@ export class Bime {
     const sibisec = nsSinceEpoch / this.NS_PER_SIBISEC;
     return new this(sibisec);
   }
+  static now() {
+    return Bime.fromDate(new Date());
+  }
   toDate() {
     const nsSinceEpoch = this.sibisec * Bime.NS_PER_SIBISEC;
     const ms = Bime.EPOCH + nsSinceEpoch / 1_000_000n;

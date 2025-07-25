@@ -88,6 +88,24 @@ body {
   margin-top: 6px;
 }
 
+header {
+  text-align: center;
+}
+header .epoch {
+  font-size: 14px;
+  color: oklch(70.9% 0.01 56.259);
+  font-weight: 600;
+}
+header .day {
+  font-weight: 400;
+  font-size: 18px;
+  color: oklch(86.9% 0.005 56.366);
+}
+header .day-value {
+  font-weight: 600;
+  color: oklch(98.5% 0.001 106.423);
+}
+
 .essaying {
   max-width: 450px;
   width: 100%;

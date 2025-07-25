@@ -18,6 +18,9 @@ function displayTime(comp: BimeComponents) {
     el.querySelector(".hex")!.innerHTML = c.toString(16).toUpperCase();
     el.querySelector(".dec")!.innerHTML = c.toString(10);
   });
+
+  document.querySelector(".day-value")!.innerHTML =
+    comp.daySinceEpoch.toString();
 }
 const setLatestTime = () =>
   displayTime(Bime.fromDate(new Date()).timeAsComponents());
